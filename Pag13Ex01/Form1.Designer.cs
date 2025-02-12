@@ -53,15 +53,16 @@
             // 
             cmbOp.FormattingEnabled = true;
             cmbOp.Items.AddRange(new object[] { "+", "-", "x", "/" });
-            cmbOp.Location = new Point(327, 168);
+            cmbOp.Location = new Point(316, 169);
             cmbOp.Name = "cmbOp";
             cmbOp.Size = new Size(121, 23);
             cmbOp.TabIndex = 2;
             cmbOp.Text = "Operação";
+            cmbOp.SelectedIndexChanged += cmbOp_SelectedIndexChanged;
             // 
             // txtResult
             // 
-            txtResult.Location = new Point(337, 263);
+            txtResult.Location = new Point(327, 264);
             txtResult.Name = "txtResult";
             txtResult.Size = new Size(100, 23);
             txtResult.TabIndex = 3;
