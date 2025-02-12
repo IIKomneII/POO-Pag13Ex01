@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// Variável de designer necessária.
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpar os recursos que estão sendo usados.
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,82 +20,73 @@
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Windows Form Designer
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNum2 = new System.Windows.Forms.TextBox();
-            this.txtNum1 = new System.Windows.Forms.TextBox();
-            this.cmbOp = new System.Windows.Forms.ComboBox();
-            this.txtResult = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
-            // 
-            // txtNum2
-            // 
-            this.txtNum2.Location = new System.Drawing.Point(447, 150);
-            this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(100, 20);
-            this.txtNum2.TabIndex = 0;
-            this.txtNum2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum2_KeyPress);
+            txtNum1 = new TextBox();
+            txtNum2 = new TextBox();
+            cmbOp = new ComboBox();
+            txtResult = new TextBox();
+            SuspendLayout();
             // 
             // txtNum1
             // 
-            this.txtNum1.Location = new System.Drawing.Point(170, 150);
-            this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(100, 20);
-            this.txtNum1.TabIndex = 1;
-            this.txtNum1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNum1_KeyPress);
+            txtNum1.Location = new Point(125, 113);
+            txtNum1.Name = "txtNum1";
+            txtNum1.Size = new Size(100, 23);
+            txtNum1.TabIndex = 0;
+            txtNum1.KeyPress += txtNum1_KeyPress;
+            // 
+            // txtNum2
+            // 
+            txtNum2.Location = new Point(532, 113);
+            txtNum2.Name = "txtNum2";
+            txtNum2.Size = new Size(100, 23);
+            txtNum2.TabIndex = 1;
             // 
             // cmbOp
             // 
-            this.cmbOp.FormattingEnabled = true;
-            this.cmbOp.Items.AddRange(new object[] {
-            "+",
-            "-",
-            "x",
-            "/"});
-            this.cmbOp.Location = new System.Drawing.Point(296, 210);
-            this.cmbOp.Name = "cmbOp";
-            this.cmbOp.Size = new System.Drawing.Size(121, 21);
-            this.cmbOp.TabIndex = 2;
-            this.cmbOp.Text = "Operações";
+            cmbOp.FormattingEnabled = true;
+            cmbOp.Items.AddRange(new object[] { "+", "-", "x", "/" });
+            cmbOp.Location = new Point(327, 168);
+            cmbOp.Name = "cmbOp";
+            cmbOp.Size = new Size(121, 23);
+            cmbOp.TabIndex = 2;
+            cmbOp.Text = "Operação";
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(306, 293);
-            this.txtResult.Name = "txtResult";
-            this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(100, 20);
-            this.txtResult.TabIndex = 3;
-            this.txtResult.Text = "Resultado";
+            txtResult.Location = new Point(337, 263);
+            txtResult.Name = "txtResult";
+            txtResult.Size = new Size(100, 23);
+            txtResult.TabIndex = 3;
+            txtResult.Text = "Resultado";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtResult);
-            this.Controls.Add(this.cmbOp);
-            this.Controls.Add(this.txtNum1);
-            this.Controls.Add(this.txtNum2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtResult);
+            Controls.Add(cmbOp);
+            Controls.Add(txtNum2);
+            Controls.Add(txtNum1);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNum2;
-        private System.Windows.Forms.TextBox txtNum1;
-        private System.Windows.Forms.ComboBox cmbOp;
-        private System.Windows.Forms.TextBox txtResult;
+        private TextBox txtNum1;
+        private TextBox txtNum2;
+        private ComboBox cmbOp;
+        private TextBox txtResult;
     }
 }
-
